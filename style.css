@@ -7,7 +7,7 @@
     border: 0;
 }
 
-section{
+header  {
     position: fixed;
     top:0;
     left: 0;
@@ -17,34 +17,7 @@ section{
     z-index: 5;
 }
 
-#menuIcon {
-    background-color: rgb(72, 75, 250);
-    text-align: auto;
-    color: white;
-    display: none;
-}
 
-itens ul {
-    list-style-type: none;
-    font-size: large;   
-}
-
-#itens ul li{
-    display: inline;
-}
-
-#itens ul li a{
-    text-decoration: none;
-    padding: 10px 15px 10px 15px;
-    display: inline-block;
-    transition: background .4s;
-}
-
-#itens ul li a:hover{
-    background-color: rgb(111, 138, 255);
-    box-shadow: 2px 2px 3px black;
-    border-radius: 2px;
-}
 
 body{
     background-image: url(images/pexels-valdemaras-d-1647972.jpg);
@@ -54,7 +27,7 @@ body{
 
 main{
     position: static;
-    background-color: #d9d9ff;
+    background-color: #d9d9ffbe;
     margin: auto;
     box-shadow: 7px 7px 7px black;
     border-radius: 10px;
@@ -134,7 +107,7 @@ button{
     font-size: medium;
 }
 
-@media screen and (max-width: 800px){
+@media (max-width: 767px){
     #itens {
         border-color: aqua;
         display: none;    
@@ -150,5 +123,52 @@ button{
         cursor: pointer;
     }
 
+    #itens ul li a{
+        text-decoration: none;
+        padding: 10px 15px 10px 15px;
+        display: block;
+        transition: background .4s;
+    }
+    
+    #itens ul li a:hover{
+        background-color: rgb(111, 138, 255);
+        box-shadow: 2px 2px 3px black;
+        border-radius: 2px;
+    }
+    
+    #itens_horizontal {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    #menuIcon {
+        display: none;
+    }
+    
+    #itens_horizontal ul li{
+        display: inline;
+        text-align: center;
+    }
+    
+    #itens_horizontal ul li a{
+        text-decoration: none;
+        padding: 10px 15px 10px 15px;
+        display: inline-block;
+        transition: background .4s;
+    }
+    
+    #itens_horizontal ul li a:hover{
+        background-color: rgb(111, 138, 255);
+        box-shadow: 2px 2px 3px black;
+        border-radius: 2px;
+    }
+
+    #itens {
+
+        display: none;    
+    }
     
 }
+
+
