@@ -98,14 +98,6 @@ input, textarea {
     margin: auto;
 }
 
-button{
-    border-radius: 5px;
-    cursor: pointer;
-    margin: auto;
-    border: 1px solid  rgb(188, 151, 255);
-    padding: 5px;
-    font-size: medium;
-}
 
 @media (max-width: 767px){
     #itens {
@@ -141,7 +133,7 @@ button{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px){
+@media screen and (min-width:768px){
     #menuIcon {
         display: none;
     }

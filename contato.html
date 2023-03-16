@@ -38,17 +38,17 @@
     </header>
 
     <section id="formulario">
-       <form action="">
-            <Label>Nome:</Label>
-            <input type="text">
+       <form action="contato.php" method="get">
+            <Label for="nome">Nome:</Label>
+            <input type="text" name="nome" id="idnome">
 
-            <Label>E-mail:</Label>
-            <input type="email">
+            <Label for="email">E-mail:</Label>
+            <input type="email" name="email" id="idemail">
 
-            <Label>Menssagem:</Label>
-            <textarea name="Menssagem" id=""></textarea>
+            <Label for="mensagem">Menssagem:</Label>
+            <textarea class="field" name="menssagem" id="idmensagem" placeholder="Digite sua mensagem aqui."></textarea>
 
-            <Button>Enviar</Button>
+            <input type="submit" value="Enviar" id="enviar">
        </form>
     
 </body>
